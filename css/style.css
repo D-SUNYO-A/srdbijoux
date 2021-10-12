@@ -6,13 +6,62 @@ body {
     width: 100%;
     padding: 0px 150px 0px 150px;
 }
+button.btn-custom {
+    background: #F4F4F0;
+    padding: 18px;
+    font-size: 15px;
+}
 
-/*responsive*/
+/*debut carousel */
+.carousel-custom{
+    margin: 0;
+    padding: 0;
+}
+.carousel-custom .carousel-indicators-custom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: flex-end;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    list-style: none;
+    padding: 0px 150px 0px 150px;
+}
+.carousel-custom .carousel-indicators-custom li.indicator-custom {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #868686;
+    margin: 0px 15px;
+}
+.carousel-custom .carousel-indicators-custom li.active {
+    background: #868686 !important;
+}
+.carousel-custom .carousel-inner .carousel-item .carousel-content {
+    position: absolute;
+    right: 0;
+    bottom: 118px;
+}
+.carousel-custom .carousel-inner .carousel-item .carousel-content h3 {
+    font-size: 80px;
+    color: #c0676d;
+}
+/*fin carousel*/
+
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (max-width: 1200px) {
 }
 /* Large devices (desktops, 992px and up)*/
 @media (max-width: 992px) {
+    .carousel-custom .carousel-inner .carousel-item .carousel-content {
+        bottom: 60px;
+    }
 }
 /* Medium devices (tablets, 768px and up)*/
 @media (max-width: 768px){
@@ -20,11 +69,33 @@ body {
         width: 100%;
         padding: 0px 50px 0px 50px;
     }
+    .carousel-custom .carousel-indicators-custom {
+        padding: 0px 50px 0px 50px;
+    }
+    .carousel-custom .carousel-indicators-custom li.indicator-custom {
+        margin: 0px 10px;
+    }
+    .carousel-custom .carousel-inner .carousel-item .carousel-content {
+        bottom: 50px;
+    }
+    .carousel-custom .carousel-inner .carousel-item .carousel-content h3 {
+        font-size: 50px;
+        color: #c0676d;
+    }
 }
 /* Small devices (landscape phones, 576px and up)*/
 @media (max-width: 576px) {
     .container-custom {
         width: 100%;
         padding: 0px 10px 0px 10px;
+    }
+    .carousel-custom .carousel-indicators-custom li.indicator-custom {
+        margin: 0px 7px;
+    }
+    .carousel-custom .carousel-indicators-custom {
+        padding: 0px 10px 0px 10px;
+    }
+    .carousel-custom .carousel-inner .carousel-item .carousel-content {
+        bottom: 50px;
     }
 }
