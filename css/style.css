@@ -1,11 +1,62 @@
+@font-face {
+    font-family: 'AGaramondPro-Regular';
+    src: url('../font/adobe-garamond-pro/AGaramondPro-Regular.otf');
+}
+
+@font-face {
+    font-family: 'avantgarde-book';
+    src: url('../font/avantgarde-book/avgb.ttf');
+}
+
 body {
     margin: 0;
     padding: 0;
 }
+
+p {
+    margin: 0 !important;
+    padding: 0px !important;
+}
+
 .container-custom {
     width: 100%;
     padding: 0px 150px 0px 150px;
 }
+
+/* -----Section----- */
+.section-header-custom {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.section-header-custom h2 {
+    font-family: 'AGaramondPro-Regular';
+    font-size: 48px;
+    line-height: 52px;
+}
+
+.section-header-custom h2::after {
+    content: '';
+    width: 64px;
+    height: 1px;
+    display: block;
+    background-color: black;
+    margin: 14px auto;
+}
+
+.section-header-custom .paragraphe-custom {
+    width: 30%;
+}
+
+.section-header-custom p {
+    font-family: 'avantgarde-book';
+    font-size: 14px;
+    text-align: center;
+    line-height: 27px;
+}
+/* -----Section----- */
+
+
 
 /*responsive*/
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -13,6 +64,9 @@ body {
 }
 /* Large devices (desktops, 992px and up)*/
 @media (max-width: 992px) {
+    .section-header-custom .paragraphe-custom {
+        width: 80%;
+    }
 }
 /* Medium devices (tablets, 768px and up)*/
 @media (max-width: 768px){
