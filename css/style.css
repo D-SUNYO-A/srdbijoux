@@ -136,12 +136,68 @@ button.btn-custom {
 .card-custom .card-body {
     background-color: red;
 }
+/* debut collection */
+.collection-item {
+    height: 100%;
+}
+.collection-item img{
+    width: 100%;
+}
+.collection-item .collection-content h4 {
+    font-size: 48px;
+    line-height:40px;
+}
+.collection-item .collection-content p {
+    font-size: 20px;
+    line-height:30px;
+}
+.collection-item .collection-content button.btn-custom {
+    margin-top: 33px;
+}
+.collection-item .collection-content {
+    padding: 45px;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.collection-item .collection-content.data-right {
+    align-items: flex-end;
+    right: 0;
+    color: white;
+}
+.collection-item .collection-content.data-left {
+    align-items: flex-start;
+    left: 0;
+    color: #cfa390;
+}
+.collection-item .collection-content.data-left {
+    align-items: flex-start;
+    left: 0;
+    color: #cfa390;
+}
+.collection-item .collection-content.data-left .btn-custom {
+    background: #cfa390;
+    color: #fff;
+}
+.collection-item .collection-content.data-right .btn-custom {
+    background: e1d8ce;
+    color: #000;
+}
+/* fin collection */
 
 /*responsive*/
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (max-width: 1200px) {
     .section-header-custom .paragraphe-custom {
         width: 80%;
+    }
+    .collection-item .collection-content {
+        padding: 25px;
+    }
+    .collection-item .collection-content h4 {
+        font-size: 30px;
+        line-height:40px;
     }
 }
 /* Large devices (desktops, 992px and up)*/
