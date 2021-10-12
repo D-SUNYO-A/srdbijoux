@@ -21,6 +21,7 @@ button.btn-custom {
     background: #F4F4F0;
     padding: 18px;
     font-size: 15px;
+    border-radius: ;
 }
 
 /*debut carousel */
@@ -65,75 +66,89 @@ button.btn-custom {
 }
 /*fin carousel*/
 
-/* ----- debut section-custom ----- */
-.section-custom {
-    padding-top: 70px;
-    padding-bottom: 70px;
+/* debut section pierre */
+#section-pierre {
+    padding-top: 69px;
 }
-/* ----- fin section-custom ----- */
-
-/* ----- debut section-header ----- */
-.section-header-custom {
-    margin-bottom: 65px;
+.pierre-header {
+    margin-bottom: 62px;
 }
-
-.section-header-custom h2 {
-    font-family: 'AGaramondPro-Regular';
+.pierre-header h2::after {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 1px;
+    background: #000;
+    margin: 14px auto;
+}
+.pierre-header h2 {
     font-size: 48px;
     line-height: 52px;
 }
-
-.section-header-custom h2::after {
+.pierre-header p {
+    width: 33%;
+    font-size: 14px;
+    line-height: 27px;
+    text-align: center;
+}
+.card-custom .card-img {
+    position: relative;
+}
+.card-custom .card-custom-content {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    margin-top:12px;
+    height: 80px;
+}
+.card-custom .card-custom-content p {
+    font-size: 12px;
+}
+.card-custom .card-custom-content p::before{
     content: '';
+    display: block;
     width: 64px;
     height: 1px;
+    background: #000;
+    margin: auto;
+    margin-bottom: 8px;
+}
+.card-custom:hover .card-custom-content p::before{
+    display: none;
+}
+.card-custom .card-img img.front {
     display: block;
-    background-color: black;
-    margin: 14px auto;
 }
+.card-custom .card-img img.back {
+    display: none;
+}
+.card-custom:hover .card-img img.front{
+    display: none;
+}
+.card-custom:hover .card-img img.back {
+    display: block;
+}
+.card-custom .card-custom-content span , .card-custom .card-custom-content .actions{
+    display: none;
+}
+.card-custom:hover .card-custom-content span , .card-custom:hover .card-custom-content .actions{
+    display: block;
+    font-size:12px;
+}
+.card-custom:hover .card-custom-content {
+    justify-content: space-between;
+}
+.card-custom:hover .card-custom-content .actions{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.card-custom:hover .card-custom-content .actions a{
+    font-size:12px;
 
-.section-header-custom .paragraphe-custom {
-    width: 30%;
 }
+/* fin section pierre */
 
-.section-header-custom p {
-    font-family: 'avantgarde-book';
-    font-size: 14px;
-    text-align: center;
-    line-height: 27px;
-}
-/* -----fin section-header ----- */
-
-/* ----- debut section-content ----- */
-.section-content-custom .col-xl-4 {
-    padding: 0px;
-}
-
-.section-content-custom .col-xl-4:first-child {
-    padding-left: 15px;
-}
-
-.section-content-custom .col-xl-4:last-child {
-    padding-right: 15px;
-}
-/* ----- fin section-content ----- */
-
-/* Card */
-.card-custom {
-    border: none !important;
-    border-radius: 0px !important;
-}
-
-.card-custom img {
-    border-radius: 0px !important;
-    width: 100%;
-    height: 540px;
-    object-fit: cover;
-}
-
-.card-custom .card-body {
-    background-color: red;
-}
 /* debut collection */
 .collection-item {
     height: 100%;
