@@ -29,6 +29,11 @@ button.btn-custom {
     margin: 0;
     padding: 0;
 }
+
+.carousel-custom img {
+    height: 100vh;
+}
+
 .carousel-custom .carousel-indicators-custom {
     position: absolute;
     right: 0;
@@ -91,9 +96,20 @@ button.btn-custom {
     line-height: 27px;
     text-align: center;
 }
+
 .card-custom .card-img {
+    height: 400px;
     position: relative;
+    overflow: hidden;
+    border-radius: 0px;
 }
+
+.card-custom .card-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover !important;
+}
+
 .card-custom .card-custom-content {
     padding: 24px;
     display: flex;
@@ -151,6 +167,73 @@ button.btn-custom {
 /* fin section pierre */
 
 /* debut collection */
+#section-collection {
+    padding-top: 69px;
+}
+
+.collection-header {
+    margin-bottom: 62px;
+}
+.collection-header h2::after {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 1px;
+    background: #000;
+    margin: 14px auto;
+}
+.collection-header h2 {
+    font-size: 48px;
+    line-height: 52px;
+}
+.collection-header p {
+    width: 25%;
+    font-size: 14px;
+    line-height: 27px;
+    text-align: center;
+}
+
+/* debut navtabs */
+.nav-tabs {
+    background: transparent;
+    box-shadow: none;
+    border: 0px !important;
+    margin-bottom: 48px !important;
+}
+
+.nav-tabs .nav-link {
+    border: 0px !important;
+    border-radius: 0px !important;
+    border-bottom: 2px solid transparent !important;
+    padding: 0 0 5px 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 28px;
+    margin-right: 60px;
+    color: #595959;
+    transition: .4s ease-in-out;
+}
+
+.nav-tabs .nav-item:last-child .nav-link{
+    margin-right: 0px;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: #000000 !important;
+    border-bottom-color: #000000 !important;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #000000 !important;
+    border-bottom-color: #000000 !important;
+}
+
+.tab-content {
+    margin-bottom: 140px;
+}
+
+/* fin navtabs */
+
 .collection-item {
     height: 100%;
 }
