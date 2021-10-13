@@ -32,6 +32,7 @@ button.btn-custom {
 
 .carousel-custom img {
     height: 100vh;
+    object-fit: cover;
 }
 
 .carousel-custom .carousel-indicators-custom {
