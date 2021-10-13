@@ -142,6 +142,7 @@ button.btn-custom {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-top: 5px;
 }
 .card-custom:hover .card-custom-content .actions a{
     font-size:12px;
